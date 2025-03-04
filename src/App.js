@@ -53,6 +53,7 @@ function App() {
           <Route path="/admin" element={<AdminIndex />} />
           <Route path="/admin_login" element={<AdminLogin />} />
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       )}
     </BrowserRouter>
