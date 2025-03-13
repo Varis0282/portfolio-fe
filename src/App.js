@@ -23,7 +23,7 @@ function App() {
   const getdata = async (req, res) => {
     try {
       dispatch(showLoading());
-      const response = await axios.get("https://portfolio-be-akdg.onrender.com/api/getdata");
+      const response = await axios.get("https://varis-portfolio-be.netlify.app/api/getdata");
       dispatch(setPortfolioData(response.data));
       dispatch(ReloadData(false));
       dispatch(hideLoading());
